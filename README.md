@@ -1,6 +1,6 @@
 # Option Pricer MVP
 
-A production-ready option pricing library with C++17 computational core, Python bindings, and Streamlit UI.
+An option pricing library with C++17 computational core, Python bindings, and Streamlit UI.
 
 ## Quick Start (Docker)
 
