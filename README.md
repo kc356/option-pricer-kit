@@ -60,30 +60,6 @@ option-pricer-kit/
 └── app/                 # Streamlit UI
 ```
 
-## Prerequisites
-
-### Windows
-1. Install [Visual Studio 2019+](https://visualstudio.microsoft.com/) with "Desktop development with C++" workload
-2. Install [CMake](https://cmake.org/download/) (add to PATH)
-3. Install [Python 3.10+](https://www.python.org/downloads/)
-
-```powershell
-# Verify installation
-cmake --version
-python --version
-```
-
-### macOS
-```bash
-brew install cmake python3 pybind11
-```
-
-### Linux (Ubuntu/Debian)
-```bash
-sudo apt-get update
-sudo apt-get install build-essential cmake python3-dev python3-pip
-```
-
 ## Build & Install
 
 ### 1. Build C++ Core
@@ -286,33 +262,6 @@ docker build -t option-pricer .
 docker run -p 8501:8501 option-pricer
 
 # Access at http://localhost:8501
-```
-
-### Deploy to Render (Free)
-
-1. Push your repo to GitHub
-2. Go to [render.com](https://render.com) and create a new Web Service
-3. Connect your GitHub repo
-4. Settings:
-   - **Environment**: Docker
-   - **Instance Type**: Free
-5. Deploy and get your public URL
-
-### Deploy to Google Cloud Run
-
-```bash
-# Authenticate
-gcloud auth login
-
-# Build and push
-gcloud builds submit --tag gcr.io/YOUR_PROJECT_ID/option-pricer
-
-# Deploy
-gcloud run deploy option-pricer \
-    --image gcr.io/YOUR_PROJECT_ID/option-pricer \
-    --platform managed \
-    --region us-central1 \
-    --allow-unauthenticated
 ```
 
 ## Testing
