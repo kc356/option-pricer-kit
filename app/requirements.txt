@@ -1,0 +1,9 @@
+# Core dependencies for Streamlit app
+streamlit>=1.28.0
+matplotlib>=3.7.0
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Note: option_pricer_cpp is installed separately via:
+#   pip install ./python/
+# Or automatically via Docker build
