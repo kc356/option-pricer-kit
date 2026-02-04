@@ -250,20 +250,6 @@ The UI provides:
 - **FD Grid Visualization**: 3D surface of option value across (S, t)
 - **Early Exercise Analysis**: American option exercise boundary plot
 
-## Docker Deployment
-
-### Local Development
-
-```bash
-# Build Docker image
-docker build -t option-pricer .
-
-# Run container
-docker run -p 8501:8501 option-pricer
-
-# Access at http://localhost:8501
-```
-
 ## Testing
 
 The test suite validates:
